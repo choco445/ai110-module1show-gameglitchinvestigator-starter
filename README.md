@@ -26,12 +26,21 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+The game allows the user to guess a number within a range and gives the user an amount of guesses based on the selected difficulty and tells the user when their guess is too high or too low.
 - [ ] Detail which bugs you found.
+1. The hint kept saying to go lower, regardless of the guess, and it didn't prevent the user from entering numbers lower than or higher than the range and also didn't give any additional warning messages.
+2. The diffferent ranges for difficulty levels don't show in the main UI, it just
+says the range is 1-100.
+3. The New Game Button doesn't do anything and the game basically just freezes.
+4. Tells you that you're out of attempts when you have one attempt left
 - [ ] Explain what fixes you applied.
+1. I fixed the issue with the hints being inverted by correcting the logic in the check_guess function to return the correct messages based on whether the guess is too high or too low.
+2. I fixed the issue with the New Game button not working, and successfully restarted the game whenever it was pressed.
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+- [ ![alt text](image.png)] [Insert a screenshot of your fixed, winning game here]
+
 
 ## 🚀 Stretch Features
 
